@@ -1,0 +1,89 @@
+.footer {
+  padding: 3rem 0;
+  width: 100vw;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .box-container {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .box-container .maxWith {
+  max-width: 18rem;
+}
+
+.footer .box-container .conteinerInfoSocial {
+  padding: 1rem;
+}
+.footer .box-container .conteinerInfoSocial img {
+  width: 6rem;
+  height: 6rem;
+}
+.footer .box-container .conteinerInfoSocial p {
+  color: #dededee5;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer .box-container .conteinerInfo {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.footer .box-container .conteinerInfo h1 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.footer .box-container .conteinerInfo ul {
+  list-style: none;
+}
+.footer .box-container .conteinerInfo ul li {
+  color: #dededee5;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footer .box-container .conteinerLinks {
+  padding: 1rem;
+}
+.footer .box-container .conteinerLinks h1 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.footer .box-container .conteinerLinks ul {
+  list-style: none;
+}
+.footer .box-container .conteinerLinks ul li {
+  color: #dededee5;
+  font-weight: 400;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footer .copyright {
+  display: flex;
+  border-top: 0.6px solid #dddddd62;
+  padding: 2rem 4rem;
+}
+.footer .copyright p {
+  color: #ffffff;
+}

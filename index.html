@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blessd Home</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/foter.css" />
+    <link rel="stylesheet" href="./css/load.css" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicons -->
+    <link href="assets/imgs/logo.jpg" rel="icon" />
+    <link href="assets/imgs/logo.jpg" rel="apple-touch-icon" />
+
+    <!-- Paguina style -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Animação -->
+    <link rel="stylesheet" href="./css/animacao.css" />
+
+    <!-- Swiper Js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body id="body" onload="loading()">
+    <div class="loadConteiner" id="loade">
+      <div class="loading">
+        <div class="loading__ring">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background: new 0 0 100 100"
+            xml:space="preserve"
+          >
+            <path
+              d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"
+            ></path>
+          </svg>
+        </div>
+        <div class="loading__ring">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 100"
+            style="enable-background: new 0 0 100 100"
+            xml:space="preserve"
+          >
+            <path
+              d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- header section starts  -->
+    <header id="header" class="header" data-anime="scale">
+      <div class="subHeader">
+        <div class="conteinerLogo">
+          <img src="./assets/imgs/logo.jpg" alt="Logo da Blessd Home" />
+          <h3>Blessd Home</h3>
+        </div>
+
+        <div class="conteinerLocalContact">
+          <div class="localContact">
+            <img src="./assets/icons/telefonema.png" alt="" />
+            <span>923-478-586</span>
+          </div>
+          <div class="localContact">
+            <img style="font-size: 24px" src="./assets/icons/gps.png" alt="" />
+            <span>Avenida 21 de Janeiro, Luanda</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <a class="linkmenu" href="#home">Inicio</a>
+        <a class="linkmenu" href="#aboutUs">Sobre nós</a>
+        <a class="linkmenu" href="#ourServices">Serviços</a>
+        <a class="linkmenu" href="#ourProjects">Projetos</a>
+        <a class="linkmenu" href="./pages/news/index.html">Blog</a>
+        <a class="linkmenu" href="#contactUs">Contactos</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+    </header>
+
+    <div id="conteinerall" class="conteinerAll">
+      <!-- swiper section starts  -->
+      <section class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <section class="slide" id="slide">
+              <div
+                class="imgBackground"
+                style="background-image: url(../assets/imgs/herobanner1.jpg)"
+              ></div>
+              <div class="slideInfo" data-anime="scale">
+                <h1 id="h1home">Preparamos Serviços Proficionais</h1>
+                <p id="p1home">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam ipsum nostrum laborum iusto molestiae nulla corporis
+                </p>
+                <button id="btn1home" class="btnHome">Saber mais</button>
+              </div>
+            </section>
+          </div>
+
+          <div class="swiper-slide">
+            <section class="slide" id="slide">
+              <div
+                class="imgBackground"
+                style="background-image: url(../assets/imgs/herobanner2.jpg)"
+              ></div>
+              <div class="slideInfo" data-anime="scale">
+                <h1 id="h1home">Melhores Cursos Proficionais</h1>
+                <p id="p1home">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam ipsum nostrum laborum iusto molestiae nulla corporis
+                </p>
+                <button id="btn1home" class="btnHome">Saber mais</button>
+              </div>
+            </section>
+          </div>
+
+          <div class="swiper-slide">
+            <section class="slide" id="slide">
+              <div
+                class="imgBackground"
+                style="background-image: url(../assets/imgs/herobanner3.jpg)"
+              ></div>
+              <div class="slideInfo" data-anime="scale">
+                <h1 id="h1home">Equipamentos da melhor Qualidade</h1>
+                <p id="p1home">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam ipsum nostrum laborum iusto molestiae nulla corporis
+                </p>
+                <button id="btn1home" class="btnHome">Saber mais</button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </section>
+
+      <section class="services">
+        <div class="titleSection">
+          <h1>
+            Nossos Serviços
+          </h1>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="iconConteiner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                  />
+                </svg>
+              </div>
+              <h2>Reparo interior</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                maxime sapiente.
+              </p>
+              <button>Saber mais</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="iconConteiner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-gear-wide-connected"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z"
+                  />
+                </svg>
+              </div>
+              <h2>Instalação</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                maxime sapiente.
+              </p>
+              <button>Saber mais</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="iconConteiner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-wrench"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z"
+                  />
+                </svg>
+              </div>
+              <h2>Reparação</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                maxime sapiente.
+              </p>
+              <button>Saber mais</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="iconConteiner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-newspaper"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"
+                  />
+                  <path
+                    d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"
+                  />
+                </svg>
+              </div>
+              <h2>Instruções</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                maxime sapiente.
+              </p>
+              <button>Saber mais</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide2">
+              <div class="iconConteiner">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-sliders2-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 10.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H3V1.5a.5.5 0 0 0-1 0V10H.5a.5.5 0 0 0-.5.5ZM2.5 12a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Zm3-6.5A.5.5 0 0 0 6 6h1.5v8.5a.5.5 0 0 0 1 0V6H10a.5.5 0 0 0 0-1H6a.5.5 0 0 0-.5.5ZM8 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2A.5.5 0 0 0 8 1Zm3 9.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1H14V1.5a.5.5 0 0 0-1 0V10h-1.5a.5.5 0 0 0-.5.5Zm2.5 1.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 1 0v-2a.5.5 0 0 0-.5-.5Z"
+                  />
+                </svg>
+              </div>
+              <h2>Ajuste</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                maxime sapiente.
+              </p>
+              <button>Saber mais</button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper2-button-prev"></div>
+        <div class="swiper2-button-next"></div>
+      </section>
+
+      <section class="works">
+        <div class="areaInfo">
+          <div class="titleSection">
+            <h1>
+              EMPRESA DE REPARAÇÃO E INSTALAÇÃO DE AQUECIMENTO E AR CONDICIONADO
+            </h1>
+          </div>
+
+          <div class="rigth">
+            <p>
+              Accumsan bibendum the sit amet, consectetur adipiscing elit.
+              Pellentesque accumsan bibendum bibendum diam et. Ac vulputate
+              morbi egestas porta posuere curabitur.
+            </p>
+
+            <p>
+              Pellentesque accumsan bibendum bibendum diam et. Ac vulputate
+              morbi egestas porta posuere curabitur.
+            </p>
+            <button>
+              <span>Ler mais</span>
+            </button>
+          </div>
+        </div>
+        <!-- Photo Grid -->
+        <div class="row">
+          <div class="column">
+            <div>
+              <img src="./assets/imgs/galeria1.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/imgs/galeria2.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="./assets/imgs/galeria3.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/imgs/galeria4.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="./assets/imgs/galeria5.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/imgs/galeria6.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="./assets/imgs/galeria7.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+            <div>
+              <img src="./assets/imgs/galeria8.jpg" style="width: 100%" />
+              <div class="descriptonServiço">
+                <h1>Cerca electrica</h1>
+                <p>Eletricidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="emphasisWorks">
+        <div class="titleSection">
+          <h1>
+            Nossos trabalhos em destaque
+          </h1>
+        </div>
+
+        <div class="conteinerContent">
+          <div class="cardChoose">
+            <div class="imgConteiner">
+              <div class="imgShadow"></div>
+              <img class="imgBackground" src="./assets/imgs/galeria5.jpg" alt="">
+            </div>
+            <div class="description">
+              <a class="title" href="#">
+                Limpeza e otimização
+              </a>
+              <div class="btnSeePlus">
+                <a href="#"> Saber mais </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardChoose">
+            <div class="imgConteiner">
+              <div class="imgShadow"></div>
+              <img class="imgBackground" src="./assets/imgs/destaque1.jpg" alt="">
+            </div>
+            <div class="description">
+              <a class="title" href="#">
+                Limpeza e otimização
+              </a>
+              <div class="btnSeePlus">
+                <a href="#"> Saber mais </a href="#">
+              </div>
+            </div>
+          </div>
+
+          <div class="cardChoose">
+            <div class="imgConteiner">
+              <div class="imgShadow"></div>
+              <img class="imgBackground" src="./assets/imgs/destaque1.jpg" alt="">
+            </div>
+            <div class="description">
+              <a class="title" href="#">
+                Limpeza e otimização
+              </a>
+              <div class="btnSeePlus">
+                <a href="#"> Saber mais </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btnSeeAll">
+          <button>
+            <span>
+              Ver todos os trabalhos
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="choose">
+        <div class="areaInfo">
+          <div class="titleSection">
+            <h1>
+              Porque escolher-nos?
+            </h1>
+          </div>
+
+          <div class="conteinerContent">
+            <div class="left">
+              <div class="reason">
+                <img src="./assets/icons/team.png" alt="" srcset="">
+                <div class="description">
+                  <h1>
+                    Equipe Excelente
+                  </h1>
+                  <p>
+                    Contamos com uma extensa equipe de profissionais qualificados com um histórico comprovado de prestação de trabalho de qualidade.
+                  </p>
+                </div>
+              </div>
+
+              <div class="reason">
+                <img src="./assets/icons/money.png" alt="" srcset="">
+                <div class="description">
+                  <h1>
+                    Preços de serviços acessíveis 
+                  </h1>
+                  <p>
+                    Como nosso objetivo é garantir que os serviços da melhor qualidade estejam disponíveis para todos, todas as nossas obras são precificadas a preços genuínos e competentes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="reason">
+                <img src="./assets/icons/customer-support.png" alt="" srcset="">
+                <div class="description">
+                  <h1>
+                    Suporte ao cliente
+                  </h1>
+                  <p>
+                    Através da nossa funcionalidade 24 horas e linha de apoio gratuita, garantimos a nossa presença sempre que os nossos clientes necessitem
+.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="rigth">
+              <img src="./assets/imgs/galeria5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="opinions">
+        <div class="areaInfo">
+          <div class="titleSection">
+            <h1>
+              Opniões dos nossos clientes
+            </h1>
+          </div>
+         
+          <div class="conteinerContent">
+
+          </div>
+        </div>
+      </section>
+
+      <section class="recentsBlog">
+        <div class="areaInfo">
+          <div class="titleSection">
+            <h1>
+              Blogs Recentes
+            </h1>
+          </div>
+         
+          <div class="conteinerContent">
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer starts -->
+      <section id="myFooter" class="footer">
+        <div class="box-container" data-anime="down">
+          <div class="maxWith conteinerInfoSocial">
+            <img src="./assets/imgs/logo.png" alt="">
+            <div class="socialLinks">
+
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut cupiditate in recusandae, autem aperiam 
+            </p>
+          </div>
+
+          <div class="maxWith conteinerInfo">
+            <div>
+              <h1>Escritorio -</h1>
+              <ul>
+                <li>Endereço de cobrança: Avenida 21 de Janeiro, Luanda</li>
+              </ul>
+            </div>
+
+            <div>
+              <h1>Lige para nós -</h1>
+              <ul>
+                <li>Celular: 945-918-576</li>
+                <li>Escritório: 980-449-142</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="maxWith conteinerLinks">
+            <h1>Linkes Rápidos</h1>
+            <ul>
+              <li>Sobre nós</li>
+              <li>Blog</li>
+              <li>Trabalhos</li>
+              <li>Serviços</li>
+              <li>Contacte-nos</li>
+            </ul>
+          </div>
+
+          <div class="maxWith conteinerLinks">
+            <h1>Nossos serviços</h1>
+            <ul>
+              <li>Manutenção e reparo de climatização</li>
+              <li>Instalação e Gerenciamento de Projetos</li>
+              <li>Teste de qualidade do ar interno</li>
+              <li>Projeto e instalações de climatização</li>
+              <li>Potente Energia e Eficiência</li>
+              <li>Limpeza e Otimização de HVAC</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="copyright">
+          <p>
+            Copyright © 2022, TchossyRarp. Todos os direitos reservados. 
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="./js/script.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/tradutorIndex.js"></script>
+    <script src="./js/animete.js"></script>
+    <script src="./js/loading.js"></script>
+
+    <script>
+      function loading() {
+        document.getElementById('loade').style.display = 'none'
+        document.getElementById('header').style.display = 'flex'
+        document.getElementById('conteinerall').style.display = 'block'
+        document.getElementById('myFooter').style.display = 'block'
+      }
+    </script>
+
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+        },
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      })
+
+      const services = new Swiper('.services', {
+        loop: true,
+        slidesPerView: 4,
+        centeredSlides: false,
+        grabCursor: true,
+
+        on: {
+          resize: function () {
+            swiper.changeSlidesPerView(getNumberPreView())
+          }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper2-button-next',
+          prevEl: '.swiper2-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination2',
+          clickable: true
+        }
+      })
+    </script>
+  </body>
+</html>

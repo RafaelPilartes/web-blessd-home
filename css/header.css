@@ -1,0 +1,226 @@
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  position: fixed;
+
+  border-radius: 0 0 1rem 1rem;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header::before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 1.6rem;
+  right: 0px;
+  bottom: 0px;
+  height: 110%;
+  background: url(../assets/imgs/header-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  z-index: -100;
+}
+
+.header.sticky {
+}
+
+.header.sticky .navbar a {
+}
+
+.header .subHeader {
+  margin: 0.6rem 0;
+  padding: 0.6rem 0;
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  border-bottom: 1.6px solid #eee;
+}
+
+.header .conteinerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .conteinerLogo img {
+  width: 5rem;
+  height: 5rem;
+}
+.header .conteinerLogo h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.header .conteinerLocalContact {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.header .conteinerLocalContact .localContact {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.header .conteinerLocalContact .localContact img {
+  width: 1.5rem;
+  color: var(--txt-title);
+}
+
+.header .navbar {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  gap: 2.6rem;
+  flex-wrap: wrap;
+}
+.header .navbar a {
+  position: relative;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 0 0.3rem 0;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: 'Barlow', sans-serif;
+}
+
+.header .navbar > a:hover {
+  color: var(--main-color);
+}
+
+.header .navbar > a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.1rem;
+  width: 0%;
+  background-color: var(--main-color);
+  transition: 0.5s ease;
+}
+.header .navbar > a:hover::before {
+  width: 100%;
+}
+
+.header .icons {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+.header .icons div {
+  top: 1rem;
+  right: 2%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+
+.header .icons div:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 996px) {
+  .header::before {
+    height: 0%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s ease;
+  }
+
+  .header .navbar #ulLang li {
+    list-style: none;
+    margin: 6px;
+    padding: 4px;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .header .navbar .linkmenu {
+    font-size: 0.8rem;
+  }
+  .header .navbar > a:hover {
+    color: var(--main-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .header .navbar > a::before {
+    font-size: 1rem;
+    content: '[';
+    position: absolute;
+    left: 40px;
+    opacity: 0;
+  }
+  .header .navbar > a::after {
+    font-size: 1em;
+    content: ']';
+    position: absolute;
+    right: 40px;
+    opacity: 0;
+    transition: 0.7s ease;
+  }
+  .header .navbar > a:hover::before {
+    font-size: 1rem;
+    content: '[';
+    position: absolute;
+    display: inline;
+    left: 0;
+    opacity: 1;
+    transition: 0.7s ease;
+  }
+  .header .navbar > a:hover::after {
+    font-size: 1rem;
+    content: ']';
+    position: absolute;
+    display: inline;
+    right: 0;
+    opacity: 1;
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .icons div {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1.8rem;
+    display: inline;
+  }
+}
+
+@media (max-width: 789px) {
+  .header {
+    height: 12rem;
+  }
+}
